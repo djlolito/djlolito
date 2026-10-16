@@ -1,0 +1,138 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="640" height="490" viewBox="0 0 640 490">
+
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="scanlines" width="4" height="4"
+             patternUnits="userSpaceOnUse">
+      <path d="M0 3.5 H4" stroke="#39ff14"
+            stroke-opacity=".08" stroke-width=".7"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="490" rx="14" fill="#030603"/>
+  <rect x="1" y="1" width="638" height="488" rx="13"
+        fill="none" stroke="#176b20"/>
+
+  <!-- Terminal header -->
+  <circle cx="24" cy="24" r="5" fill="#ff5f56"/>
+  <circle cx="42" cy="24" r="5" fill="#ffbd2e"/>
+  <circle cx="60" cy="24" r="5" fill="#27c93f"/>
+
+  <text x="82" y="29" fill="#39ff14"
+        font-family="monospace" font-size="14">
+    djlolito@cyber-terminal:~$ scan --avatar
+  </text>
+
+  <path d="M20 45 H620" stroke="#176b20"/>
+
+  <!-- Animated ASCII mask -->
+  <g font-family="monospace" font-size="17"
+     font-weight="bold" xml:space="preserve"
+     fill="#39ff14" filter="url(#glow)">
+
+    <text x="0" y="88" text-anchor="middle"
+          opacity="0"> 
+      <set attributeName="opacity" to="1" begin="0.2s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="78" text-anchor="middle" opacity="0">
+      .:+===========================+:.
+      <animate attributeName="opacity" from="0" to="1"
+               begin="0.2s" dur="0.15s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="105" text-anchor="middle" opacity="0">
+      /########## CYBER MASK ##########\
+      <animate attributeName="opacity" from="0" to="1"
+               begin="0.4s" dur="0.15s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="132" text-anchor="middle" opacity="0">
+      |#######.--------------.########|
+      <animate attributeName="opacity" from="0" to="1"
+               begin="0.6s" dur="0.15s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="159" text-anchor="middle" opacity="0">
+      |##### /  /########\  \ ######|
+      <animate attributeName="opacity" from="0" to="1"
+               begin="0.8s" dur="0.15s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="186" text-anchor="middle" opacity="0">
+      |####|  /  /######\  \  |####|
+      <animate attributeName="opacity" from="0" to="1"
+               begin="1.0s" dur="0.15s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="213" text-anchor="middle" opacity="0">
+      |### | [==] ###### [==] | ###|
+      <animate attributeName="opacity" from="0" to="1"
+               begin="1.2s" dur="0.15s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="240" text-anchor="middle" opacity="0">
+      |### |  \_/########\_/  | ###|
+      <animate attributeName="opacity" from="0" to="1"
+               begin="1.4s" dur="0.15s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="267" text-anchor="middle" opacity="0">
+      |####\      /##\      /####|
+      <animate attributeName="opacity" from="0" to="1"
+               begin="1.6s" dur="0.15s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="294" text-anchor="middle" opacity="0">
+      |#####\____/####\____/#####|
+      <animate attributeName="opacity" from="0" to="1"
+               begin="1.8s" dur="0.15s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="321" text-anchor="middle" opacity="0">
+      \##########[CORE]##########/
+      <animate attributeName="opacity" from="0" to="1"
+               begin="2.0s" dur="0.15s" fill="freeze"/>
+    </text>
+
+    <text x="320" y="348" text-anchor="middle" opacity="0">
+      '---====----====----====---'
+      <animate attributeName="opacity" from="0" to="1"
+               begin="2.2s" dur="0.15s" fill="freeze"/>
+    </text>
+  </g>
+
+  <!-- Scanline overlay -->
+  <rect x="10" y="50" width="620" height="310"
+        fill="url(#scanlines)" pointer-events="none"/>
+
+  <!-- Status panel -->
+  <path d="M20 375 H620" stroke="#176b20"/>
+
+  <g font-family="monospace" font-size="13" fill="#39ff14">
+    <text x="28" y="403">[ SYSTEM ]</text>
+    <text x="160" y="403">ONLINE</text>
+    <text x="28" y="426">[ ID      ]</text>
+    <text x="160" y="426">DJLOLITO</text>
+    <text x="28" y="449">[ SECURITY]</text>
+    <text x="160" y="449">ACCESS GRANTED</text>
+  </g>
+
+  <rect x="28" y="463" width="584" height="3"
+        fill="#123b17"/>
+  <rect x="28" y="463" width="584" height="3"
+        fill="#39ff14">
+    <animate attributeName="opacity"
+             values="1;0.35;1" dur="1.8s"
+             repeatCount="indefinite"/>
+  </rect>
+</svg>
