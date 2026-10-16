@@ -1,16 +1,45 @@
-## Hi there 👋
 
-<!--
-**djlolito/djlolito** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
 
-Here are some ideas to get you started:
+# `djlolito@github:~$ whoami`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🟢 SYSTEM ONLINE
+
+```text
+      .-----------------------.
+     /  [ 0 ]           [ 0 ]  \
+    |       .-----------.       |
+    |       |  CYBER    |       |
+    |       |   CORE    |       |
+     \      '-----------'      /
+      '-----------------------'
+
+  > INITIALIZING PROFILE...
+  > ACCESS GRANTED
+```
+
+`[ CYBERPUNK MODE ]` · `[ DEVELOPER PROFILE ]`
+
+</div>
+
+---
+
+### `> about --me`
+
+Welcome to my GitHub terminal.
+
+### `> tech --list`
+
+`// Technologies and tools coming soon`
+
+### `> projects --featured`
+
+`// Loading awesome projects...`
+
+---
+
+<div align="center">
+
+<sub>SESSION: DJLOLITO · CONNECTION: ESTABLISHED</sub>
+
+</div>
