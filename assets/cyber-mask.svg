@@ -1,313 +1,67 @@
-
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="640" height="490"
-     viewBox="0 0 640 490">
-
+ <escape><svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" viewBox="0 0 720 320">
   <defs>
-    <filter id="eyeGlow" x="-100%" y="-100%"
-            width="300%" height="300%">
-      <feGaussianBlur stdDeviation="3"
-                      result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <linearGradient id="scanGradient"
-                    x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#39ff14"
-            stop-opacity="0"/>
-      <stop offset="50%" stop-color="#39ff14"
-            stop-opacity=".65"/>
-      <stop offset="100%" stop-color="#39ff14"
-            stop-opacity="0"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020806"/>
+      <stop offset="100%" stop-color="#06160d"/>
     </linearGradient>
-
-    <pattern id="scanlines"
-             width="4" height="4"
-             patternUnits="userSpaceOnUse">
-      <path d="M0 3.5 H4"
-            stroke="#39ff14"
-            stroke-opacity=".08"
-            stroke-width=".7"/>
+    <linearGradient id="mask" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#123d27"/>
+      <stop offset="50%" stop-color="#07150e"/>
+      <stop offset="100%" stop-color="#020604"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#39ff14" stroke-opacity=".12" stroke-width=".7"/>
     </pattern>
-
-    <clipPath id="screenClip">
-      <rect x="10" y="48" width="620" height="318"/>
+    <clipPath id="clip">
+      <rect width="720" height="320" rx="12"/>
     </clipPath>
   </defs>
 
-  <!-- Background -->
-  <rect width="640" height="490"
-        rx="14" fill="#030603"/>
+  <g clip-path="url(#clip)">
+    <rect width="720" height="320" fill="url(#bg)"/>
+    <rect width="720" height="320" fill="url(#grid)"/>
 
-  <rect x="1" y="1" width="638" height="488"
-        rx="13" fill="none"
-        stroke="#176b20"/>
-
-  <!-- Terminal header -->
-  <circle cx="24" cy="24" r="5" fill="#ff5f56"/>
-  <circle cx="42" cy="24" r="5" fill="#ffbd2e"/>
-  <circle cx="60" cy="24" r="5" fill="#27c93f"/>
-
-  <text x="82" y="29"
-        fill="#39ff14"
-        font-family="monospace"
-        font-size="14">
-    djlolito@cyber-terminal:~$ scan --avatar
-  </text>
-
-  <path d="M20 45 H620"
-        stroke="#176b20"/>
-
-  <!-- Mask viewport -->
-  <g clip-path="url(#screenClip)">
-
-    <!-- Decorative HUD -->
-    <g fill="none" stroke="#176b20"
-       stroke-width="1">
-      <path d="M30 85 V65 H50"/>
-      <path d="M590 85 V65 H570"/>
-      <path d="M30 325 V345 H50"/>
-      <path d="M590 325 V345 H570"/>
-      <circle cx="320" cy="205" r="145"
-              stroke-opacity=".3"
-              stroke-dasharray="3 8"/>
-      <circle cx="320" cy="205" r="160"
-              stroke-opacity=".18"
-              stroke-dasharray="2 12"/>
+    <g fill="#39ff14" opacity=".55" font-family="monospace" font-size="10">
+      <text x="20" y="26">KNS://IDENTITY_SCAN</text>
+      <text x="20" y="43">SUBJECT: DJLOLIΤO</text>
+      <text x="20" y="57">STATUS: ENCRYPTED</text>
+      <text x="560" y="26">SYS.PROTECT</text>
+      <text x="560" y="43">TRACE: DISABLED</text>
+      <text x="560" y="57">NODE: 0x7F21</text>
     </g>
 
-    <!-- Mask outline -->
-    <path d="M220 90
-             L270 70
-             L370 70
-             L420 90
-             L455 145
-             L440 265
-             L390 320
-             L320 345
-             L250 320
-             L200 265
-             L185 145 Z"
-          fill="#061009"
-          stroke="#168b25"
-          stroke-width="2"/>
-
-    <!-- Helmet panels -->
-    <path d="M220 100 L260 85 L275 120
-             L245 150 L215 140 Z"
-          fill="#0a1b0b"
-          stroke="#39ff14"
-          stroke-opacity=".6"/>
-
-    <path d="M420 100 L380 85 L365 120
-             L395 150 L425 140 Z"
-          fill="#0a1b0b"
-          stroke="#39ff14"
-          stroke-opacity=".6"/>
-
-    <!-- Central forehead -->
-    <path d="M275 92 L320 78 L365 92
-             L350 135 L320 150 L290 135 Z"
-          fill="#081708"
-          stroke="#39ff14"
-          stroke-opacity=".8"/>
-
-    <text x="320" y="117"
-          text-anchor="middle"
-          font-family="monospace"
-          font-size="12"
-          font-weight="bold"
-          fill="#39ff14">DJ</text>
-
-    <!-- Left eye socket -->
-    <path d="M215 160
-             L285 150
-             L275 198
-             L225 205 Z"
-          fill="#020402"
-          stroke="#168b25"
-          stroke-width="2"/>
-
-    <!-- Right eye socket -->
-    <path d="M425 160
-             L355 150
-             L365 198
-             L415 205 Z"
-          fill="#020402"
-          stroke="#168b25"
-          stroke-width="2"/>
-
-    <!-- Glowing eyes -->
-    <g fill="#39ff14"
-       filter="url(#eyeGlow)">
-
-      <path d="M225 170 L270 164
-               L260 187 L230 190 Z">
-        <animate attributeName="opacity"
-                 values="1;.45;1"
-                 dur="2s"
-                 repeatCount="indefinite"/>
-      </path>
-
-      <path d="M415 170 L370 164
-               L380 187 L410 190 Z">
-        <animate attributeName="opacity"
-                 values=".45;1;.45"
-                 dur="2s"
-                 repeatCount="indefinite"/>
-      </path>
+    <g stroke="#39ff14" stroke-width="1.5" fill="none" opacity=".75">
+      <path d="M105 85H170L190 105"/>
+      <path d="M615 85H550L530 105"/>
+      <path d="M105 240H170L190 220"/>
+      <path d="M615 240H550L530 220"/>
+      <path d="M360 30V58M347 43H373"/>
     </g>
 
-    <!-- Eye highlights -->
-    <path d="M232 174 L257 171"
-          stroke="#d7ffd0" stroke-width="2"/>
-    <path d="M408 174 L383 171"
-          stroke="#d7ffd0" stroke-width="2"/>
+    <g transform="translate(0 3)">
+      <path d="M360 60
+        L430 78 L480 113 L492 162 L467 218
+        L430 258 L360 280 L290 258 L253 218
+        L228 162 L240 113 L290 78 Z"
+        fill="#031008" stroke="#39ff14" stroke-width="1.6" opacity=".95"/>
 
-    <!-- Nose bridge -->
-    <path d="M300 150 L290 218
-             L320 237 L350 218 L340 150"
-          fill="#071007"
-          stroke="#168b25"
-          stroke-width="2"/>
+      <path d="M360 72 L420 88 L461 119 L470 161
+        L449 205 L419 240 L360 263 L301 240
+        L271 205 L250 161 L259 119 L300 88 Z"
+        fill="url(#mask)" stroke="#176c32" stroke-width="2"/>
 
-    <path d="M310 183 L320 205 L330 183"
-          fill="none"
-          stroke="#39ff14"
-          stroke-width="2"/>
+      <path d="M266 136 L316 119 L345 139 L332 158
+        L294 161 L266 150 Z"
+        fill="#020604" stroke="#39ff14" stroke-width="1.5" filter="url(#glow)"/>
+      <path d="M454 136 L404 119 L375 139 L388 158
+        L426 161 L454 150 Z"
+        fill="#020604" stroke="#39ff14" stroke-width="1.5" filter="url(#glow)"/>
 
-    <!-- Lower face plate -->
-    <path d="M230 218
-             L275 207
-             L320 240
-             L365 207
-             L410 218
-             L390 282
-             L350 315
-             L320 325
-             L290 315
-             L250 282 Z"
-          fill="#061009"
-          stroke="#168b25"
-          stroke-width="2"/>
+      <path d="M278 143L322 130L339 141L328 149L294 151Z" fill="#39ff14" opacity=".9"/>
+      <path d="M442 143L398 130L381 141L392 149L426 151Z" fill="#39ff14" opacity=".9"/>
 
-    <!-- Mechanical mouth -->
-    <path d="M280 255 H360
-             L348 292 H292 Z"
-          fill="#020402"
-          stroke="#39ff14"
-          stroke-opacity=".8"/>
-
-    <g stroke="#39ff14"
-       stroke-width="2"
-       opacity=".9">
-      <path d="M294 262 V284"/>
-      <path d="M306 260 V287"/>
-      <path d="M318 260 V287"/>
-      <path d="M330 260 V287"/>
-      <path d="M342 262 V284"/>
-    </g>
-
-    <!-- Side vents -->
-    <g stroke="#39ff14"
-       stroke-width="3"
-       stroke-opacity=".65">
-      <path d="M211 220 L232 230"/>
-      <path d="M207 235 L228 245"/>
-      <path d="M429 220 L408 230"/>
-      <path d="M433 235 L412 245"/>
-    </g>
-
-    <!-- ASCII decorative layer -->
-    <g font-family="monospace"
-       font-size="11"
-       fill="#39ff14"
-       opacity=".6">
-      <text x="42" y="115">01001</text>
-      <text x="42" y="130">10110</text>
-      <text x="42" y="145">11001</text>
-
-      <text x="510" y="115">10110</text>
-      <text x="510" y="130">01001</text>
-      <text x="510" y="145">11010</text>
-
-      <text x="42" y="285">SYS.OK</text>
-      <text x="510" y="285">SYS.OK</text>
-    </g>
-
-    <!-- Scanline overlay -->
-    <rect x="10" y="48" width="620" height="318"
-          fill="url(#scanlines)"
-          pointer-events="none"/>
-
-    <!-- Moving scanner -->
-    <rect x="10" y="48" width="620" height="24"
-          fill="url(#scanGradient)"
-          opacity=".8"
-          pointer-events="none">
-      <animate attributeName="y"
-               values="48;342;48"
-               dur="4s"
-               repeatCount="indefinite"/>
-    </rect>
-
-    <!-- Scanning label -->
-    <text x="320" y="355"
-          text-anchor="middle"
-          font-family="monospace"
-          font-size="11"
-          fill="#39ff14">
-      BIOMETRIC SCAN IN PROGRESS
-    </text>
-
-  </g>
-
-  <!-- Status panel -->
-  <path d="M20 375 H620"
-        stroke="#176b20"/>
-
-  <g font-family="monospace"
-     font-size="13"
-     fill="#39ff14">
-    <text x="28" y="402">[ SYSTEM ]</text>
-    <text x="160" y="402">ONLINE</text>
-
-    <text x="28" y="425">[ ID ]</text>
-    <text x="160" y="425">DJLOLITO</text>
-
-    <text x="28" y="448">[ SECURITY ]</text>
-    <text x="160" y="448">ACCESS GRANTED</text>
-  </g>
-
-  <!-- Progress bar -->
-  <rect x="28" y="462" width="584" height="4"
-        fill="#123b17"/>
-
-  <rect x="28" y="462" width="584" height="4"
-        fill="#39ff14">
-    <animate attributeName="width"
-             values="0;584;584;0"
-             keyTimes="0;.65;.85;1"
-             dur="4s"
-             repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Blinking terminal cursor -->
-  <text x="28" y="482"
-        font-family="monospace"
-        font-size="11"
-        fill="#39ff14">
-    &gt; SYSTEM_READY
-    <tspan>
-      _
-      <animate attributeName="opacity"
-               values="1;0;1"
-               dur="1s"
-               repeatCount="indefinite"/>
-    </tspan>
-  </text>
-
-</svg>
+      <path
