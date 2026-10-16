@@ -1,86 +1,66 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/DJLOLITO-CYBERPUNK_OS-39ff14?style=for-the-badge&labelColor=050805" alt="DJLOLITO Cyberpunk OS" />
+<img src="assets/matrix-header.svg" width="100%" alt="DJLOLITO Matrix Terminal" />
 
-<br/>
+### `djlolito@system:~$ whoami`
 
-<img src="assets/cyber-mask.svg" width="600" alt="Máscara cyberpunk de djlolito" />
+**SYSADMIN · BACKEND · AUTOMATION**
 
-# `djlolito@system:~$ whoami`
-
-**BACKEND · AUTOMATIZACIÓN · SISTEMAS**
-
-`[ SISTEMA ACTIVO ]` · `[ ACCESO AUTORIZADO ]`
+`[ SYSTEM ONLINE ]` · `[ ACCESS GRANTED ]`
 
 </div>
 
 ---
 
-## `01 // PERFIL`
+<div align="center">
+
+<img src="assets/terminal-panel.svg" width="100%" alt="System information terminal" />
+
+</div>
+
+## `01 // SOBRE MÍ` · `ABOUT ME`
+
+**ES** — Me interesa el desarrollo de software, la automatización y la administración de sistemas. Este perfil reúne mis proyectos, experimentos y aprendizaje tecnológico.
+
+**EN** — I'm interested in software development, automation, and systems administration. This profile showcases my projects, experiments, and ongoing technical learning.
+
+## `02 // ÁREAS DE INTERÉS` · `AREAS OF INTEREST`
 
 ```text
-┌──────────────────────────────────────┐
-│           DJLOLITO_OS                │
-├──────────────────────────────────────┤
-│  ÁREA       Backend / Sistemas       │
-│  ENFOQUE    Automatización           │
-│  ENTORNO    Desarrollo tecnológico   │
-│  ESTADO     Explorando y construyendo│
-└──────────────────────────────────────┘
+┌──────────────────────────────────────────────┐
+│  [01] Backend & Automation                  │
+│  [02] Systems Administration                │
+│  [03] Networking & Infrastructure           │
+│  [04] Technology Projects                   │
+└──────────────────────────────────────────────┘
 ```
 
-Me interesa el desarrollo backend, la automatización y los sistemas. Este perfil reúne mis proyectos, experimentos y aprendizajes dentro del mundo tecnológico.
-
-## `02 // TECNOLOGÍAS`
-
-> Inventario tecnológico en construcción.
-
-Las tecnologías y herramientas se añadirán aquí conforme se definan las que utilizo.
-
-<!-- Añade tus tecnologías reales aquí cuando quieras.
-Ejemplo de formato:
-- Lenguajes:
-- Backend:
-- Bases de datos:
-- Sistemas:
-- Automatización:
-- Herramientas:
--->
-
-## `03 // PROYECTOS DESTACADOS`
-
-Consulta mis repositorios para descubrir mis proyectos y experimentos.
+## `03 // EXPLORAR REPOSITORIOS` · `EXPLORE REPOSITORIES`
 
 <div align="center">
 
 <a href="https://github.com/djlolito?tab=repositories">
-  <img src="https://img.shields.io/badge/EXPLORAR-REPOSITORIOS-39ff14?style=for-the-badge&labelColor=050805" alt="Explorar repositorios" />
+  <img src="https://img.shields.io/badge/OPEN-REPOSITORIES-39ff14?style=for-the-badge&labelColor=050805" alt="Open repositories" />
 </a>
 
 </div>
 
-<!-- Añade aquí los proyectos que quieras destacar.
-No se muestran proyectos ficticios.
--->
-
-## `04 // ESTADÍSTICAS DEL SISTEMA`
+## `04 // ACTIVIDAD` · `CONTRIBUTION ACTIVITY`
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=djlolito&show_icons=true&hide_border=true&bg_color=050805&title_color=39ff14&text_color=c9f7c9&icon_color=39ff14&ring_color=39ff14" alt="Estadísticas de GitHub de djlolito" />
-
-<br/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=djlolito&layout=compact&hide_border=true&bg_color=050805&title_color=39ff14&text_color=c9f7c9" alt="Lenguajes más utilizados en GitHub" />
+<img src="https://raw.githubusercontent.com/djlolito/djlolito/output/github-snake.svg" width="100%" alt="GitHub contribution snake" />
 
 </div>
 
-## `05 // ACTIVIDAD`
+## `05 // ESTADÍSTICAS` · `STATISTICS`
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=djlolito&bg_color=050805&color=39ff14&line=168b25&point=00ff99&area=true&hide_border=true" width="100%" alt="Actividad de GitHub de djlolito" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=djlolito&show_icons=true&hide_border=true&bg_color=050805&title_color=39ff14&text_color=c9f7c9&icon_color=39ff14" alt="GitHub statistics" />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=djlolito&layout=compact&hide_border=true&bg_color=050805&title_color=39ff14&text_color=c9f7c9" alt="Most used languages" />
 
 </div>
 
@@ -89,12 +69,17 @@ No se muestran proyectos ficticios.
 <div align="center">
 
 ```text
-> INICIALIZANDO SESIÓN...
-> USUARIO: DJLOLITO
-> CONEXIÓN: ESTABLECIDA
-> FIN DE LA TRANSMISIÓN_
+root@djlolito:~$ ./build.sh
+
+[ OK ] INITIALIZING PROFILE
+[ OK ] LOADING PROJECTS
+[ OK ] ESTABLISHING CONNECTION
+
+BUILD // AUTOMATE // LEARN
+
+root@djlolito:~$ _
 ```
 
-<sub>CONSTRUIR · AUTOMATIZAR · APRENDER</sub>
+<sub>Matrix-inspired terminal · Animated SVG · GitHub Actions</sub>
 
 </div>
