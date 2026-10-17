@@ -1,21 +1,28 @@
- <escape><svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" viewBox="0 0 720 320">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" viewBox="0 0 720 320">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#020806"/>
       <stop offset="100%" stop-color="#06160d"/>
     </linearGradient>
+
     <linearGradient id="mask" x1="0" y1="0" x2="0.9" y2="1">
       <stop offset="0%" stop-color="#123d27"/>
       <stop offset="50%" stop-color="#07150e"/>
       <stop offset="100%" stop-color="#020604"/>
     </linearGradient>
-    <filter id="glow">
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
+
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
       <path d="M24 0H0V24" fill="none" stroke="#39ff14" stroke-opacity=".12" stroke-width=".7"/>
     </pattern>
+
     <clipPath id="clip">
       <rect width="720" height="320" rx="12"/>
     </clipPath>
@@ -27,7 +34,7 @@
 
     <g fill="#39ff14" opacity=".55" font-family="monospace" font-size="10">
       <text x="20" y="26">KNS://IDENTITY_SCAN</text>
-      <text x="20" y="43">SUBJECT: DJLOLIΤO</text>
+      <text x="20" y="43">SUBJECT: DJLO LITO</text>
       <text x="20" y="57">STATUS: ENCRYPTED</text>
       <text x="560" y="26">SYS.PROTECT</text>
       <text x="560" y="43">TRACE: DISABLED</text>
@@ -43,25 +50,92 @@
     </g>
 
     <g transform="translate(0 3)">
+      <!-- Outer mask -->
       <path d="M360 60
         L430 78 L480 113 L492 162 L467 218
         L430 258 L360 280 L290 258 L253 218
         L228 162 L240 113 L290 78 Z"
         fill="#031008" stroke="#39ff14" stroke-width="1.6" opacity=".95"/>
 
+      <!-- Inner mask -->
       <path d="M360 72 L420 88 L461 119 L470 161
         L449 205 L419 240 L360 263 L301 240
         L271 205 L250 161 L259 119 L300 88 Z"
         fill="url(#mask)" stroke="#176c32" stroke-width="2"/>
 
+      <!-- Left eye socket -->
       <path d="M266 136 L316 119 L345 139 L332 158
         L294 161 L266 150 Z"
         fill="#020604" stroke="#39ff14" stroke-width="1.5" filter="url(#glow)"/>
+
+      <!-- Right eye socket -->
       <path d="M454 136 L404 119 L375 139 L388 158
         L426 161 L454 150 Z"
         fill="#020604" stroke="#39ff14" stroke-width="1.5" filter="url(#glow)"/>
 
-      <path d="M278 143L322 130L339 141L328 149L294 151Z" fill="#39ff14" opacity=".9"/>
-      <path d="M442 143L398 130L381 141L392 149L426 151Z" fill="#39ff14" opacity=".9"/>
+      <!-- Neon eyes -->
+      <path d="M266 143L322 130L339 141L328 149L294 151Z"
+        fill="#39ff14" opacity=".9"/>
+      <path d="M454 143L398 130L381 141L392 149L426 151Z"
+        fill="#39ff14" opacity=".9"/>
 
-      <path
+      <!-- Nose bridge -->
+      <path d="M350 139L360 151L370 139L376 170
+        L360 184L344 170Z"
+        fill="#020604" stroke="#176c32" stroke-width="1.5"/>
+
+      <!-- Nose highlight -->
+      <path d="M360 153L354 169L360 174L366 169Z"
+        fill="#39ff14" opacity=".65"/>
+
+      <!-- Mouth and jaw -->
+      <path d="M330 170 L350 181 L360 177 L370 181 L390 170
+        L383 198 L360 211 L337 198 Z"
+        fill="#020604" stroke="#39ff14" stroke-width="1.5"/>
+
+      <!-- Mouth grille -->
+      <path d="M340 188 L360 194 L380 188 L375 199
+        L360 205 L345 199 Z"
+        fill="#39ff14" opacity=".85"/>
+
+      <!-- Jaw contour -->
+      <path d="M295 215 L325 226 L350 231 L360 233
+        L370 231 L395 226 L425 215"
+        fill="none" stroke="#176c32" stroke-width="2"/>
+
+      <!-- Mechanical details -->
+      <g stroke="#39ff14" stroke-width="1.2" opacity=".8">
+        <path d="M315 225L325 240"/>
+        <path d="M335 232L340 249"/>
+        <path d="M355 235V253"/>
+        <path d="M365 235V253"/>
+        <path d="M385 232L380 249"/>
+        <path d="M405 225L395 240"/>
+      </g>
+
+      <!-- Side armor -->
+      <g fill="none" stroke="#39ff14" stroke-width="1.2" opacity=".7">
+        <path d="M252 164L270 174L276 192"/>
+        <path d="M468 164L450 174L444 192"/>
+        <path d="M276 192L292 202"/>
+        <path d="M444 192L428 202"/>
+      </g>
+    </g>
+
+    <!-- HUD labels -->
+    <g fill="#39ff14" font-family="monospace" font-size="9" opacity=".8">
+      <text x="20" y="290">KAOSNET // CYBER DEFENSE</text>
+      <text x="560" y="290">ID: DJLOLITO</text>
+    </g>
+
+    <!-- Footer -->
+    <path d="M20 302H700" stroke="#39ff14" stroke-opacity=".45"/>
+
+    <text x="360" y="314"
+      fill="#39ff14"
+      font-family="monospace"
+      font-size="9"
+      text-anchor="middle"
+      opacity=".7">[ IDENTITY VERIFIED ]</text>
+  </g>
+</svg>
