@@ -130,7 +130,9 @@ root@kaosnet:~# exit
 Connection closed. Keep building.
 ```
 
-<img src="https://komarev.com/ghpvc/?username=djlolito&style=flat-square&color=39ff14&label=SYSTEM+VISITS" alt="Profile views">
+
+<img src="https://komarev.com/ghpvc/?username=djlolito&label=PROFILE%20VIEWS&color=39ff14&style=flat-square" alt="Profile views">
+
 
 **`[ END OF TRANSMISSION ]`**
 
