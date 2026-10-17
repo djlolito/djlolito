@@ -1,6 +1,10 @@
  <escape><div align="center">
 
-<img src="assets/cyber-mask.svg" alt="Cyber Mask — KaoSNeT" width="720">
+<img
+    src="https://raw.githubusercontent.com/djlolito/djlolito/main/assets/cyber-mask.svg"
+    alt="Cyber Mask — KaoSNeT"
+    width="720"
+  >
 
 <img src="assets/matrix-header.svg" alt="Matrix terminal header" width="100%">
 
