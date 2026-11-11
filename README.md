@@ -57,7 +57,7 @@
 <img src="https://img.shields.io/badge/OPNsense-39FF14?style=for-the-badge&logo=opnsense&logoColor=black" alt="OPNsense">
 <img src="https://img.shields.io/badge/Cloudflare-39FF14?style=for-the-badge&logo=cloudflare&logoColor=black" alt="Cloudflare">
 <img src="https://img.shields.io/badge/WireGuard-39FF14?style=for-the-badge&logo=wireguard&logoColor=black" alt="WireGuard">
-<img src="https://img.shields.io/badge/Wazuh-39FF14?style=for-the-badge&logoColor=black" alt="Wazuh">
+<img src="https://img.shields.io/badge/Wazuh-39FF14?style=for-the-badge&logo=wazuh&logoColor=black" alt="Wazuh">
 
 **AUTOMATION & MONITORING**
 

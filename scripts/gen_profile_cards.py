@@ -28,7 +28,6 @@ REPOS_QUERY = """
 query($login: String!) {
   user(login: $login) {
     followers { totalCount }
-    allPublic: repositories(ownerAffiliations: OWNER, privacy: PUBLIC) { totalCount }
     repositories(ownerAffiliations: OWNER, privacy: PUBLIC, isFork: %s, first: 100) {
       totalCount
       nodes {
@@ -87,7 +86,8 @@ def summarize(user):
             langs[name] = (size + edge["size"], color)
     return {
         "stars": stars,
-        "public_repos": user["allPublic"]["totalCount"],
+        # mismo filtro que los lenguajes: sin forks salvo --include-forks
+        "public_repos": user["repositories"]["totalCount"],
         "followers": user["followers"]["totalCount"],
         "langs": sorted(((n, s, c) for n, (s, c) in langs.items()), key=lambda x: -x[1]),
     }
@@ -152,7 +152,7 @@ def render_profile_stats(login, s, repo):
         ("Pull requests", s["prs"]),
         ("Issues", s["issues"]),
         ("Stars earned", repo["stars"]),
-        ("Public repos", repo["public_repos"]),
+        ("Own repos", repo["public_repos"]),
         ("Followers", repo["followers"]),
     ]
     out = f'  <text x="20" y="30" class="title">{html.escape(login)} // GITHUB STATS</text>\n'
