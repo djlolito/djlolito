@@ -102,7 +102,7 @@ Explore my repositories for infrastructure projects, automation, administration 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/djlolito/djlolito/output/commit-stats.svg" alt="Total commits and contributions" width="560">
+<img src="https://raw.githubusercontent.com/djlolito/djlolito/output/commit-stats.svg" alt="Total commits and contributions" width="380">
 
 <img src="https://raw.githubusercontent.com/djlolito/djlolito/output/github-snake.svg" alt="Animated GitHub contribution snake" width="100%">
 

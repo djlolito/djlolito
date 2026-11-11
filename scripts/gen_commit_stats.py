@@ -103,36 +103,38 @@ def fmt(n):
 
 
 def render(s):
-    """Tarjeta ancha 560x210: pensada para que se lea también al encogerla en móvil."""
+    """Tarjeta 380x230 en cuadrícula 2x2: en móvil casi no se encoge y se lee bien."""
 
-    def block(x, value, label):
+    def block(x, y, value, label):
         return (
-            f'<text x="{x}" y="108" class="num">{html.escape(fmt(value))}</text>'
-            f'<text x="{x}" y="134" class="lbl">{html.escape(label)}</text>'
+            f'<text x="{x}" y="{y}" class="num">{html.escape(fmt(value))}</text>'
+            f'<text x="{x}" y="{y + 20}" class="lbl">{html.escape(label)}</text>'
         )
 
     foot1 = f"since {s['since']} // updated {s['updated']} UTC"
-    foot2 = "public activity only (what visitors see)"
     if s["private"]:
-        foot2 += f" // +{fmt(s['private'])} private"
+        foot2 = f"public only // +{fmt(s['private'])} private not shown"
+    else:
+        foot2 = "public activity only (what visitors see)"
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 210" width="560" height="210" role="img" aria-label="Commit statistics for {html.escape(s['login'])}">
-  <title>Commit statistics for {html.escape(s['login'])}</title>
+    login = html.escape(s["login"])
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 230" width="380" height="230" role="img" aria-label="Commit statistics for {login}">
+  <title>Commit statistics for {login}</title>
   <style>
     text {{ font-family: 'JetBrains Mono', Consolas, 'DejaVu Sans Mono', monospace; }}
-    .cmd {{ fill: #39ff14; font-size: 14px; }}
-    .num {{ fill: #39ff14; font-size: 40px; font-weight: bold; }}
-    .lbl {{ fill: #c9ffd5; font-size: 13px; letter-spacing: .5px; }}
-    .foot {{ fill: #80a88a; font-size: 12px; }}
+    .cmd {{ fill: #39ff14; font-size: 13px; }}
+    .num {{ fill: #39ff14; font-size: 34px; font-weight: bold; }}
+    .lbl {{ fill: #c9ffd5; font-size: 12px; letter-spacing: .5px; }}
+    .foot {{ fill: #80a88a; font-size: 11px; }}
   </style>
-  <rect x="1" y="1" width="558" height="208" rx="10" fill="#050b07" stroke="#39ff14" stroke-width="1.5"/>
-  <text x="28" y="38" class="cmd">root@kaosnet:~$ git log --author={html.escape(s['login'])} | wc -l</text>
-  {block(28, s['commits'], 'TOTAL COMMITS')}
-  {block(178, s['last_year'], 'CONTRIBUTIONS 12M')}
-  {block(346, s['prs'], 'PULL REQUESTS')}
-  {block(480, s['issues'], 'ISSUES')}
-  <text x="28" y="172" class="foot">{html.escape(foot1)}</text>
-  <text x="28" y="190" class="foot">{html.escape(foot2)}</text>
+  <rect x="1" y="1" width="378" height="228" rx="10" fill="#050b07" stroke="#39ff14" stroke-width="1.5"/>
+  <text x="24" y="32" class="cmd">~$ git log --author={login} | wc -l</text>
+  {block(24, 84, s['commits'], 'TOTAL COMMITS')}
+  {block(204, 84, s['last_year'], 'CONTRIBUTIONS 12M')}
+  {block(24, 148, s['prs'], 'PULL REQUESTS')}
+  {block(204, 148, s['issues'], 'ISSUES')}
+  <text x="24" y="198" class="foot">{html.escape(foot1)}</text>
+  <text x="24" y="214" class="foot">{html.escape(foot2)}</text>
 </svg>
 """
 
