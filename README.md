@@ -94,7 +94,7 @@ Explore my repositories for infrastructure projects, automation, administration 
 
 <img height="165" src="https://raw.githubusercontent.com/djlolito/djlolito/output/top-langs.svg" alt="Most used languages">
 
-<img src="https://streak-stats.demolab.com/?user=djlolito&hide_border=true&background=050B07&ring=39FF14&fire=39FF14&currStreakLabel=39FF14&sideLabels=C9FFD5&dates=80A88A" alt="GitHub contribution streak">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=djlolito&hide_border=true&background=050B07&ring=39FF14&fire=39FF14&currStreakLabel=39FF14&sideLabels=C9FFD5&dates=80A88A" alt="GitHub contribution streak">
 
 </div>
 
