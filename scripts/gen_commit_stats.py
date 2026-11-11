@@ -94,7 +94,7 @@ def render(s):
             f'<text x="{x}" y="138" class="lbl">{html.escape(label)}</text>'
         )
 
-    footer = f"since {s['since']} // updated {s['updated']} UTC // contributions as shown on the profile"
+    footer = f"since {s['since']} // updated {s['updated']} UTC // public activity only (what visitors see)"
     if s["private"]:
         footer += f" // +{fmt(s['private'])} private"
 
