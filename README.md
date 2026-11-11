@@ -1,4 +1,4 @@
- <escape><div align="center">
+<div align="center">
 
 <img src="assets/matrix-header.svg" alt="Matrix terminal header" width="100%">
 
@@ -90,17 +90,19 @@ Explore my repositories for infrastructure projects, automation, administration 
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=djlolito&show_icons=true&hide_border=true&bg_color=050B07&title_color=39FF14&text_color=C9FFD5&icon_color=39FF14&ring_color=39FF14&include_all_commits=true" alt="GitHub statistics">
+<img height="165" src="https://raw.githubusercontent.com/djlolito/djlolito/output/profile-stats.svg" alt="GitHub statistics">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=djlolito&layout=compact&hide_border=true&bg_color=050B07&title_color=39FF14&text_color=C9FFD5" alt="Most used languages">
+<img height="165" src="https://raw.githubusercontent.com/djlolito/djlolito/output/top-langs.svg" alt="Most used languages">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=djlolito&hide_border=true&background=050B07&ring=39FF14&fire=39FF14&currStreakLabel=39FF14&sideLabels=C9FFD5&dates=80A88A" alt="GitHub contribution streak">
+<img src="https://streak-stats.demolab.com/?user=djlolito&hide_border=true&background=050B07&ring=39FF14&fire=39FF14&currStreakLabel=39FF14&sideLabels=C9FFD5&dates=80A88A" alt="GitHub contribution streak">
 
 </div>
 
 ## `06 // CONTRIBUTION MATRIX`
 
 <div align="center">
+
+<img src="https://raw.githubusercontent.com/djlolito/djlolito/output/commit-stats.svg" alt="Total commits and contributions" width="100%">
 
 <img src="https://raw.githubusercontent.com/djlolito/djlolito/output/github-snake.svg" alt="Animated GitHub contribution snake" width="100%">
 
@@ -134,4 +136,4 @@ Connection closed. Keep building.
 
 **`[ END OF TRANSMISSION ]`**
 
-</div></escape>
+</div>
