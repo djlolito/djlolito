@@ -2,7 +2,7 @@
 
 <img src="assets/matrix-header.svg" alt="Matrix terminal header" width="100%">
 
-# `djlolito@kaosnet:~$`
+## `djlolito@kaosnet:~$`
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2500&pause=700&color=39FF14&center=true&vCenter=true&width=700&lines=System+Administrator;Cloud+%26+Infrastructure+Engineer;Automation+%7C+Networking+%7C+Cybersecurity;Building+the+future%2C+one+commit+at+a+time..." alt="Typing SVG">
 
@@ -94,7 +94,7 @@ Explore my repositories for infrastructure projects, automation, administration 
 
 <img height="165" src="https://raw.githubusercontent.com/djlolito/djlolito/output/top-langs.svg" alt="Most used languages">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=djlolito&hide_border=true&background=050B07&ring=39FF14&fire=39FF14&currStreakLabel=39FF14&sideLabels=C9FFD5&dates=80A88A" alt="GitHub contribution streak">
+<img height="165" src="https://raw.githubusercontent.com/djlolito/djlolito/output/streak-card.svg" alt="GitHub contribution streak">
 
 </div>
 
@@ -102,7 +102,7 @@ Explore my repositories for infrastructure projects, automation, administration 
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/djlolito/djlolito/output/commit-stats.svg" alt="Total commits and contributions" width="100%">
+<img src="https://raw.githubusercontent.com/djlolito/djlolito/output/commit-stats.svg" alt="Total commits and contributions" width="560">
 
 <img src="https://raw.githubusercontent.com/djlolito/djlolito/output/github-snake.svg" alt="Animated GitHub contribution snake" width="100%">
 
