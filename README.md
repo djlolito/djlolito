@@ -90,11 +90,11 @@ Explore my repositories for infrastructure projects, automation, administration 
 
 <div align="center">
 
-<img height="165" src="https://raw.githubusercontent.com/djlolito/djlolito/output/profile-stats.svg" alt="GitHub statistics">
+<img width="264" src="https://raw.githubusercontent.com/djlolito/djlolito/output/profile-stats.svg" alt="GitHub statistics">
 
-<img height="165" src="https://raw.githubusercontent.com/djlolito/djlolito/output/top-langs.svg" alt="Most used languages">
+<img width="264" src="https://raw.githubusercontent.com/djlolito/djlolito/output/top-langs.svg" alt="Most used languages">
 
-<img height="165" src="https://raw.githubusercontent.com/djlolito/djlolito/output/streak-card.svg" alt="GitHub contribution streak">
+<img width="264" src="https://raw.githubusercontent.com/djlolito/djlolito/output/streak-card.svg" alt="GitHub contribution streak">
 
 </div>
 
