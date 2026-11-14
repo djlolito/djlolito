@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 165" width="280" height="165">
+  <style>
+    text { font-family: 'JetBrains Mono', Consolas, 'DejaVu Sans Mono', monospace; }
+    .title { fill: #39ff14; font-size: 14px; font-weight: bold; }
+    .lbl { fill: #c9ffd5; font-size: 13px; }
+    .val { fill: #39ff14; font-size: 14px; font-weight: bold; }
+    .big { fill: #39ff14; font-size: 30px; font-weight: bold; }
+    .big2 { fill: #c9ffd5; font-size: 30px; font-weight: bold; }
+    .dim { fill: #80a88a; font-size: 11px; }
+  </style>
+  <rect x="1" y="1" width="278" height="163" rx="10" fill="#050b07" stroke="#39ff14" stroke-width="1.5"/>
+  <text x="20" y="30" class="title">djlolito // GITHUB STATS</text>
+  <text x="20" y="56" class="lbl">Total commits</text>
+  <text x="260" y="56" class="val" text-anchor="end">36</text>
+  <text x="20" y="74" class="lbl">Pull requests</text>
+  <text x="260" y="74" class="val" text-anchor="end">3</text>
+  <text x="20" y="92" class="lbl">Issues</text>
+  <text x="260" y="92" class="val" text-anchor="end">16</text>
+  <text x="20" y="110" class="lbl">Stars earned</text>
+  <text x="260" y="110" class="val" text-anchor="end">0</text>
+  <text x="20" y="128" class="lbl">Own repos</text>
+  <text x="260" y="128" class="val" text-anchor="end">1</text>
+  <text x="20" y="146" class="lbl">Followers</text>
+  <text x="260" y="146" class="val" text-anchor="end">6</text>
+</svg>

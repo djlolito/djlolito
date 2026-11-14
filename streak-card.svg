@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 165" width="280" height="165">
+  <style>
+    text { font-family: 'JetBrains Mono', Consolas, 'DejaVu Sans Mono', monospace; }
+    .title { fill: #39ff14; font-size: 14px; font-weight: bold; }
+    .lbl { fill: #c9ffd5; font-size: 13px; }
+    .val { fill: #39ff14; font-size: 14px; font-weight: bold; }
+    .big { fill: #39ff14; font-size: 30px; font-weight: bold; }
+    .big2 { fill: #c9ffd5; font-size: 30px; font-weight: bold; }
+    .dim { fill: #80a88a; font-size: 11px; }
+  </style>
+  <rect x="1" y="1" width="278" height="163" rx="10" fill="#050b07" stroke="#39ff14" stroke-width="1.5"/>
+  <text x="20" y="30" class="title">STREAK // CONTRIBUTIONS</text>
+  <text x="50" y="88" class="big" text-anchor="middle">0</text>
+  <text x="50" y="112" class="lbl" text-anchor="middle" style="font-size:9px">CURRENT STREAK</text>
+  <text x="50" y="130" class="dim" text-anchor="middle" style="font-size:10px">no streak</text>
+  <text x="140" y="88" class="big2" text-anchor="middle">3</text>
+  <text x="140" y="112" class="lbl" text-anchor="middle" style="font-size:9px">LONGEST</text>
+  <text x="140" y="130" class="dim" text-anchor="middle" style="font-size:10px">May 1-May 3</text>
+  <text x="230" y="88" class="big2" text-anchor="middle">82</text>
+  <text x="230" y="112" class="lbl" text-anchor="middle" style="font-size:9px">TOTAL</text>
+  <text x="230" y="130" class="dim" text-anchor="middle" style="font-size:10px">since 2013</text>
+  <text x="20" y="153" class="dim" style="font-size:10px">public activity // days counted in UTC</text>
+</svg>

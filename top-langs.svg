@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 165" width="280" height="165">
+  <style>
+    text { font-family: 'JetBrains Mono', Consolas, 'DejaVu Sans Mono', monospace; }
+    .title { fill: #39ff14; font-size: 14px; font-weight: bold; }
+    .lbl { fill: #c9ffd5; font-size: 13px; }
+    .val { fill: #39ff14; font-size: 14px; font-weight: bold; }
+    .big { fill: #39ff14; font-size: 30px; font-weight: bold; }
+    .big2 { fill: #c9ffd5; font-size: 30px; font-weight: bold; }
+    .dim { fill: #80a88a; font-size: 11px; }
+  </style>
+  <rect x="1" y="1" width="278" height="163" rx="10" fill="#050b07" stroke="#39ff14" stroke-width="1.5"/>
+  <text x="20" y="30" class="title">TOP LANGUAGES</text>
+  <text x="20" y="58" class="lbl">Python</text>
+  <rect x="116" y="49" width="90" height="8" rx="4" fill="#0d2410"/>
+  <rect x="116" y="49" width="90" height="8" rx="4" fill="#3572A5"/>
+  <text x="260" y="58" class="dim" text-anchor="end">100.0%</text>
+</svg>
